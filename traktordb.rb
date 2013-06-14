@@ -45,6 +45,10 @@ time_mongo = 0
 
 all_entries = []
 doc_collection.children.each do | entry |
+  if entry.text?
+    next
+  end
+
   entry_hash = nil
   time_nokogiri += Benchmark.realtime do
     entry_hash = node_to_hash(entry)
