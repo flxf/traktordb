@@ -1,0 +1,4 @@
+TraktorDB
+=========
+
+TraktorDB provides a mongodb-like api for manipulating `collections.nml`, the file containing your music's metadata used in Traktor.
